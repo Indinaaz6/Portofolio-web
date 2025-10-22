@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">                                     
+            <a class="navbar-brand fw-bold" href="index.html">Indina Anisa Zahrah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="2.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="3.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="4.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" id="darkModeToggle">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light" style="padding-top: 100px !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Project</h2>
+                    <p class="lead">Beberapa proyek yang telah saya temukan dari website</p>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <div class="btn-group" role="group" id="projectFilter">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">Semua</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="web">Website</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="mobile">Mobile</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="design">Desain</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" id="projects-container">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="web">
+                    <div class="card custom-card h-100 fade-in">
+                        <img src="w.png" class="card-img-top project-image" alt="Project 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Website Perusahaan (Company Profile Website)</h5>
+                            <p class="card-text flex-grow-1">Website perusahaan berguna untuk memberikan informasi tentang profil perusahaan, layanan, produk, visi-misi, serta cara menghubungi perusahaan.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#projectModal1">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 project-item" data-category="mobile">
+                    <div class="card custom-card h-100 fade-in">
+                        <img src="m.png" class="card-img-top project-image" alt="Project 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">E-Commerce Mobile</h5>
+                            <p class="card-text flex-grow-1">Aplikasi mobile e-commerce dengan berbagai fitur modern untuk pengalaman belanja yang optimal.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#projectModal2">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 project-item" data-category="design">
+                    <div class="card custom-card h-100 fade-in">
+                        <img src="d.png" class="card-img-top project-image" alt="Project 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Redesign Website Perusahaan (Corporate Website Redesign)</h5>
+                            <p class="card-text flex-grow-1">Mendesain ulang website perusahaan dengan fokus pada user experience dan modern design.</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#projectModal3">Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; Indinaaz_</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end social-links">
+                    <a href="#" class="text-white"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="projectModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Website Perusahaan (Company Profile Website)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="w.png" class="img-fluid mb-3" alt="Project 1">
+                    <p>Website perusahaan berguna untuk memberikan informasi tentang profil perusahaan, layanan, produk, visi-misi, serta cara menghubungi perusahaan.</p>
+                    <h6>Fitur Umum:</h6>
+                    <ul>
+                        <li>Halaman "About Us" dan "Team"</li>
+                        <li>Informasi produk atau layanan</li>
+                        <li>Formulir kontak dan integrasi media sosial</li>
+                        <li>Galeri proyek atau portofolio</li>
+                        <li>Tampilan responsive agar bisa diakses di berbagai perangkat</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-primary">Lihat Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">E-Commerce Mobile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="m.png" class="img-fluid mb-3" alt="Project 2">
+                    <p>Aplikasi mobile e-commerce dengan berbagai fitur modern untuk pengalaman belanja yang optimal.</p>
+                    <h6>Fitur Umum:</h6>
+                    <ul>
+                        <li>Registrasi dan login pengguna</li>
+                        <li>Pencarian & filter produk</li>
+                        <li>Keranjang belanja</li>
+                        <li>Pembayaran (payment gateway)</li>
+                        <li>Tracking pesanan secara real-time</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-primary">Lihat Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Redesign Website Perusahaan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="d.png" class="img-fluid mb-3" alt="Project 3">
+                    <p>Proyek redesign website perusahaan dengan fokus pada peningkatan user experience dan modernisasi tampilan.</p>
+                    <h6>Fitur Umum:</h6>
+                    <ul>
+                        <li>Peningkatan UX/UI (User Experience & Interface)</li>
+                        <li>Penyesuaian warna, tipografi, dan layout</li>
+                        <li>Optimalisasi tampilan di perangkat mobile</li>
+                        <li>Integrasi elemen interaktif seperti animasi atau micro-interaction</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-primary">Lihat Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
